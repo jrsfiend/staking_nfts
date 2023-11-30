@@ -1,0 +1,18 @@
+[package]
+name = "staking-nfts"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "staking_nfts"
+
+[features]
+default = []
+
+[dependencies]
+anchor-lang = "*"
+spl-stake-pool = { version = "0.7.0", path = "../../../solana-program-library/stake-pool/program", features = ["no-entrypoint"] }
+anchor-spl = "*"
+bytemuck = "*"
